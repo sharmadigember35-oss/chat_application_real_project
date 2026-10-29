@@ -8,7 +8,7 @@ import "./App.css";
 // Production: set REACT_APP_SERVER_URL on Vercel to your Render URL (no trailing slash), e.g. https://your-api.onrender.com
 const SERVER_URL = (
   process.env.REACT_APP_SERVER_URL ||
-  "https://chat-application-2-nsql.onrender.com"
+  "http://localhost:5000"
 ).replace(/\/+$/, "");
 const socket = io(SERVER_URL, { withCredentials: true });
 const API = `${SERVER_URL}/api`;
